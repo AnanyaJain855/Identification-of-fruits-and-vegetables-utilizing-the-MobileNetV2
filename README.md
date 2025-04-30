@@ -2,6 +2,8 @@
 
 <div align="center">
   <img src="static/images/logo.png" alt="Project Logo" width="200"/>
+  ![logo](https://github.com/user-attachments/assets/061b5620-61b5-4724-a2e4-5ed6cf1139a8)
+
   <br>
   <p><em>A comprehensive computer vision system for analyzing fruits and vegetables</em></p>
   
@@ -335,7 +337,7 @@ Then open your browser and go to `http://localhost:5000`.
   <table>
     <tr>
       <td>
-        <img src="static/images/examples/d7.png" alt="Classification Example" width="300"/>
+        ![d7](https://github.com/user-attachments/assets/44e76007-a58c-4f22-823b-461c6beeef4a)
       </td>
     </tr>
   </table>
