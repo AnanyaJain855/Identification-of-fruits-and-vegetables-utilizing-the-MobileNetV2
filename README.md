@@ -125,6 +125,37 @@ Then open your browser and go to `http://localhost:5000`.
     </tr>
   </table>
 </div>
+<br>
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img src="https://github.com/user-attachments/assets/9c1299a0-c885-40b6-8f98-a27e13476920" alt="Example Results" width="600"/>
+      </td>
+    </tr>
+  </table>
+</div>
+<br>
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img src="https://github.com/user-attachments/assets/d4e65b59-72a4-451a-a071-465e954c1400" alt="Example Results" width="600"/>
+      </td>
+    </tr>
+  </table>
+</div>
+<br>
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img src="https://github.com/user-attachments/assets/fb7ee27d-fa47-4dd3-941b-1a9e096c60ea" alt="Example Results" width="600"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
 
 ## 📁 Project Structure
 
@@ -156,6 +187,4 @@ FruitVegVision/
 
 ---
 
-<div align="center">
-  <p>Made with ❤️ by <a href="https://github.com/yourusername">Your Name</a></p>
-</div>
+
