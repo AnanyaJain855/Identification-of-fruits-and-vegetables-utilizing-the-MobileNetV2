@@ -9,7 +9,6 @@
   [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.8+-orange.svg)](https://www.tensorflow.org/)
   [![Flask](https://img.shields.io/badge/Flask-2.0+-green.svg)](https://flask.palletsprojects.com/)
   [![YOLOv8](https://img.shields.io/badge/YOLOv8-Latest-yellow.svg)](https://github.com/ultralytics/ultralytics)
-  [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
 </div>
 
 ## 📋 Table of Contents
