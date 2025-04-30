@@ -1,0 +1,103 @@
+//Image upload processing
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Refrigerator - Fruit & Veg Analysis</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #e8f5e9;
+      background-image: url('/static/fruits1.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Arial', sans-serif;
+      min-height: 100vh;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 40px;
+      margin-top: 60px;
+      max-width: 700px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .logo {
+      max-width: 80px;
+      margin-right: 20px;
+    }
+    h1 {
+      color: #27ae60;
+      font-weight: bold;
+    }
+    .upload-area {
+      background: #f9f9f9;
+      border: 2px dashed #ccc;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+    }
+    .btn-upload {
+      background-color: #27ae60;
+      border-color: #27ae60;
+      font-size: 1.1rem;
+      padding: 10px 20px;
+    }
+    .btn-upload:hover {
+      background-color: #219651;
+      border-color: #219651;
+    }
+    .form-control {
+      padding: 12px;
+    }
+    .example-hint {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    .status-box {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="/static/logo.png" alt="Logo" class="logo"/>
+      <div>
+        <h1>Smart Refrigerator</h1>
+        <p class="text-muted">Detect food type, ripeness, freshness, and more.</p>
+      </div>
+    </div>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <div class="upload-area">
+        <h4>Upload an Image</h4>
+        <p class="example-hint">Supported formats: JPG, PNG, JPEG</p>
+        <input type="file" class="form-control mt-3" name="file" accept="image/*" required>
+        <button type="submit" class="btn btn-success btn-upload mt-4">Analyze Image</button>
+      </div>
+    </form>
+
+    {% if model_status %}
+    <div class="status-box">
+      <strong>Model Status:</strong><br/>
+      Food Model: {{ model_status.food_model }}<br/>
+      Rotten Model: {{ model_status.rotten_model }}<br/>
+      Counting Model: {{ model_status.counting_model }}<br/>
+      Fruit Ripeness Model: {{ model_status.fruit_ripeness_model }}<br/>
+      Vegetable Ripeness Model: {{ model_status.veg_ripeness_model }}
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>
